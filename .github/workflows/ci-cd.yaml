@@ -55,7 +55,8 @@ jobs:
       run: dotnet publish "WiredBrainApi.Web/WiredBrainApi.Web.csproj" -c Release -o ./publish --self-contained -r linux-x64 /p:UseAppHost=true
 
     - name: Zip Artifact
-      run: zip app.zip ./publish
+      # run: zip app.zip ./publish
+      run: Compress-Archive -Path ./publish -DestinationPath app.zip
 
     - id: upload
       name: Upload Artifact
