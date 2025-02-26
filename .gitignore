@@ -1,0 +1,6 @@
+/WiredBrain.Tests/bin
+/WiredBrain.Tests/obj
+/WiredBrainApi.Web/obj
+/WiredBrainApi.Web/bin
+*.user
+/.vs
